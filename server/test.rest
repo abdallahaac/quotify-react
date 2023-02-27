@@ -1,0 +1,35 @@
+### GET authors
+GET http://localhost:3000/authors
+
+### GET FRIEND
+GET http://localhost:3000/authors/james
+
+
+### ADD A FRIEND
+POST http://localhost:3000/addAuthor
+Content-Type: application/json
+
+{
+   "author":"Sigmund Freud",
+   "quotes":{"quote":"hi for the 10th time" }
+}
+
+### UPDATE STATUS OF A FRIEND
+PATCH http://localhost:3000/changestatus
+Content-Type: application/json
+
+{
+    "name": "tomato",
+    "newStatus": "friend"
+}
+
+
+###DELETE A FRIEND
+DELETE http://localhost:3000/authors
+Content-Type: application/json
+
+{
+    "name": "banana"
+}
+
+
